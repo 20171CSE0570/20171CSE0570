@@ -1,0 +1,31 @@
+<html>
+	<head><title>pseudo-element</title>
+
+</head>
+<style>
+p::first-letter{
+	color:#ff0000;
+	font-variant:small-caps;
+}
+p::first-line{
+	color:#00ff00;
+	font-variant:xx-large;
+}
+h1::before{
+	content:url(smiley.jpeg);
+}
+
+h2::after{
+	content:url(smiley.jpeg);
+}
+
+::selection{
+	color:blue;
+	background:yellow;
+}
+</style>
+<body>
+	<p> hello this para is styled using pseudo-element</p> 
+	<h1>smiley before</h1>
+	<h2>smiley after</h2>
+</html>
